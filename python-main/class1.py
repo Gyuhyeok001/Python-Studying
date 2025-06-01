@@ -163,5 +163,18 @@ class LowFourCal(FourCal):
             return self.first / self.second
     
 a = LowFourCal(4, 0)
-
 print(a.divide())  # Output: 0
+
+# 8. class variable
+class Family:
+    lastname = 'Kim'  # class variable
+
+a = Family()
+b = Family()
+
+print(a.lastname)  # Output: Kim
+print(b.lastname)  # Output: Kim
+
+a.lastname = 'Lee'  # change instance variable
+print(a.lastname)  # Output: Lee
+print(b.lastname)  # Output: Kim (class variable remains unchanged)
