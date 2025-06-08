@@ -62,3 +62,4 @@ generator = (i*i for i in range (1,1000))
 print(next(generator))
 print(next(generator))
 print(next(generator))
+
